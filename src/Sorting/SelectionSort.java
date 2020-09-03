@@ -7,6 +7,10 @@ public class SelectionSort {
 
         // Ascending order, greater value at the end
         // O(n^2) time complexity - Quadratic
+
+        System.out.print("Unsorted array before selection sort: ");
+        for (int i : intArray) System.out.print(i + " ");
+
         for (int lastUnsortedIndex = intArray.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex--) {
 
             int largestNumber = 0;
@@ -22,7 +26,7 @@ public class SelectionSort {
         }
 
         // Print values
-        System.out.print("Sorted array after selection sort: ");
+        System.out.print("\nSorted array after selection sort: ");
         for (int j : intArray) System.out.print(j + " ");
     }
 
